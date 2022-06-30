@@ -1,0 +1,30 @@
+{
+  "name": "hackv1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "run.js",
+  "dependencies": {
+    "@i-scrapper/plugins-request": "^1.0.0",
+    "chalk": "^4.1.2",
+    "delay": "^5.0.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^9.0.0",
+    "moment": "^2.29.3",
+    "node-fetch": "^2.6.1",
+    "readline-sync": "^1.4.10"
+  },
+  "scripts": {
+    "test": "node .",
+    "run": "node .",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xcqrya/HackClockV2.git"
+  },
+  "keywords": [
+    "stumble"
+  ],
+  "author": "xcqrya",
+  "license": "ISC"
+}
