@@ -78,12 +78,12 @@ ${chalk.blueBright('Ban Tanggung Sendiri!')}
                 const trophy = data.User.SkillRating;
                 const crown = data.User.Crowns;
                 
-                console.log(chalk.blueBright(`[ ${moment().format('HH:mm:ss')} ] Username : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} | ${chalk.Rainbow(`Pass Exp : ${tokenPass}`)} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Crown : ${crown}`)}`));
+                console.log(chalk.cyanBright(`[${moment().format('HH:mm:ss')}] ${chalk.redBright(`Username : ${username}`)} | Country : ${country} | ${chalk.green(`PassExp : ${tokenPass}`)} | ${chalk.redBright(`Trophy : ${trophy}`)} | ${chalk.yellow(`Crown : ${crown}`)}`));
                 await delay(time)
 
             } else if (result == 'BANNED') {
 
-                console.log(chalk.red(`HAHA MAMPUS KENA BAN !`));
+                console.log(chalk.red(`Mampus Kena Ban ! !`));
                 break;
                 
             } else if (result == 'SERVER_ERROR') {
@@ -95,8 +95,9 @@ ${chalk.blueBright('Ban Tanggung Sendiri!')}
         
     } else if (feature == '2') {
 
-        const auth = rs.question('[+] Enter your auth token : ');
-        const time = rs.question('[+] Enter Delay in milisecond  ( Ex : 6000 = 6 second ) : ');
+
+        const auth = rs.question('[Xcbot] Masukkan auth kamu disini! : ');
+        const time = rs.question('[XcBot] Ketik delay yang anda inginkan(MiliSecond) : ');
         console.log('');
 
         while (true) {
@@ -116,13 +117,14 @@ ${chalk.blueBright('Ban Tanggung Sendiri!')}
                 const exp = data.User.Experience;
                 const tokenPass = data.User.BattlePass.PassTokens;
                 const trophy = data.User.SkillRating;
+                const crown = data.User.Crowns;
                 
-                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} |  ${chalk.blue(`Pass Star : ${tokenPass}`)}  | ${chalk.blue(`Trophy : ${trophy}`)}`));
+                console.log(chalk.cyanBright(`[${moment().format('HH:mm:ss')}] ${chalk.redBright(`Username : ${username}`)} | Country : ${country} | ${chalk.green(`PassExp : ${tokenPass}`)} | ${chalk.redBright(`Trophy : ${trophy}`)} | ${chalk.yellow(`Crown : ${crown}`)}`));
                 await delay(time)
                 
             } else if (result == 'BANNED') {
 
-                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned By KITKA!!!`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Mampus Kena Ban !`));
                 break;
                 
             } else if (result == 'SERVER_ERROR') {
@@ -134,9 +136,10 @@ ${chalk.blueBright('Ban Tanggung Sendiri!')}
 
     } else if (feature == '3') {
 
-        const auth = rs.question('[+] Enter your auth token : ');
-        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 6000 = 6 sec ) : ');
+         const auth = rs.question('[Xcbot] Masukkan auth kamu disini! : ');
+        const time = rs.question('[XcBot] Ketik delay yang anda inginkan(MiliSecond) : ');
         console.log('');
+
 
         while (true) {
 
@@ -144,7 +147,7 @@ ${chalk.blueBright('Ban Tanggung Sendiri!')}
             const result = await GoStumble(code, auth);
             if (!result) {
 
-                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Salah Auth Atau Expired !`));
                 break;
 
             } else if (result.includes('User')) {
@@ -155,13 +158,14 @@ ${chalk.blueBright('Ban Tanggung Sendiri!')}
                 const exp = data.User.Experience;
                 const tokenPass = data.User.BattlePass.PassTokens;
                 const trophy = data.User.SkillRating;
+                const crown = data.User.Crowns;
                 
-                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} |  ${chalk.blue(`Pass Star : ${tokenPass}`)}  | ${chalk.blue(`Trophy : ${trophy}`)}`));
+                console.log(chalk.cyanBright(`[${moment().format('HH:mm:ss')}] ${chalk.redBright(`Username : ${username}`)} | Country : ${country} | ${chalk.green(`PassExp : ${tokenPass}`)} | ${chalk.redBright(`Trophy : ${trophy}`)} | ${chalk.yellow(`Crown : ${crown}`)}`));
                 await delay(time)
                 
             } else if (result == 'BANNED') {
 
-                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Mampus Kena Ban !`));
                 break;
                 
             } else if (result == 'SERVER_ERROR') {
@@ -173,9 +177,10 @@ ${chalk.blueBright('Ban Tanggung Sendiri!')}
 
     } else if (feature == '4') {
 
-        const auth = rs.question('[+] Enter your auth token : ');
-        const time = rs.question('[+] Enter Delay in milisecond ( Ex : 6000 = 6 sec ) : ');
+         const auth = rs.question('[Xcbot] Masukkan auth kamu disini! : ');
+        const time = rs.question('[XcBot] Ketik delay yang anda inginkan(MiliSecond) : ');
         console.log('');
+
         
 
 
@@ -185,7 +190,7 @@ ${chalk.blueBright('Ban Tanggung Sendiri!')}
             const result = await GoStumble(code, auth);
             if (!result) {
 
-                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Salah Auth Atau Expired !`));
                 break;
 
             } else if (result.includes('User')) {
@@ -195,8 +200,10 @@ ${chalk.blueBright('Ban Tanggung Sendiri!')}
                 const country = data.User.Country;
                 const exp = data.User.Experience;
                 const tokenPass = data.User.BattlePass.PassTokens;
+                const trophy = data.User.SkillRating;
+                const crown = data.User.Crowns;
                 
-                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blueBright(`EXP : ${exp}`)} | ${chalk.redBright(`Exp Gamepass : ${tokenPass}`)}`));
+                console.log(chalk.cyanBright(`[${moment().format('HH:mm:ss')}] ${chalk.redBright(`Username : ${username}`)} | Country : ${country} | ${chalk.green(`PassExp : ${tokenPass}`)} | ${chalk.redBright(`Trophy : ${trophy}`)} | ${chalk.yellow(`Crown : ${crown}`)}`));
                 await delay(time)
                 
             } else if (result == 'BANNED') {
